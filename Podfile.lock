@@ -1,0 +1,193 @@
+PODS:
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - Differentiator (4.0.1)
+  - EmptyDataSet-Swift (5.0.0)
+  - Eureka (5.1.0)
+  - Firebase/Core (6.18.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.3.0)
+  - Firebase/CoreOnly (6.18.0):
+    - FirebaseCore (= 6.6.3)
+  - FirebaseAnalytics (6.3.0):
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.1)
+    - GoogleAppMeasurement (= 6.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseCore (6.6.3):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.1):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 1.3)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseInstallations (1.1.0):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+    - PromisesObjC (~> 1.2)
+  - FSCalendar (2.8.1)
+  - GoogleAppMeasurement (6.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (4.0.1)
+  - GoogleDataTransportCCTSupport (1.4.1):
+    - GoogleDataTransport (~> 4.0)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.5.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.5.1)
+  - GoogleUtilities/Logger (6.5.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.5.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.5.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.5.1)"
+  - GoogleUtilities/Reachability (6.5.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.5.1):
+    - GoogleUtilities/Logger
+  - ImageRow (4.0.0):
+    - Eureka (~> 5.0)
+  - MGSwipeTableCell (1.6.11)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - PromisesObjC (1.2.8)
+  - Realm (4.3.2):
+    - Realm/Headers (= 4.3.2)
+  - Realm/Headers (4.3.2)
+  - RealmSwift (4.3.2):
+    - Realm (= 4.3.2)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRealm (2.0.0):
+    - RealmSwift (~> 4.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SCLAlertView (0.8.1)
+  - SearchTextField (1.2.4)
+  - SwiftyUtils (4.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - EmptyDataSet-Swift
+  - Eureka (= 5.1.0)
+  - Firebase/Core
+  - FSCalendar
+  - ImageRow (= 4.0.0)
+  - MGSwipeTableCell
+  - RealmSwift
+  - RxCocoa
+  - RxDataSources
+  - RxRealm
+  - RxSwift
+  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
+  - SearchTextField
+  - SwiftyUtils (from `https://github.com/tbaranes/SwiftyUtils.git`, commit `adf37824622a46190aef33be686163311888a3c9`)
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - Differentiator
+    - EmptyDataSet-Swift
+    - Eureka
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstallations
+    - FSCalendar
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - ImageRow
+    - MGSwipeTableCell
+    - nanopb
+    - PromisesObjC
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxDataSources
+    - RxRealm
+    - RxRelay
+    - RxSwift
+    - SearchTextField
+
+EXTERNAL SOURCES:
+  SCLAlertView:
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+  SwiftyUtils:
+    :commit: adf37824622a46190aef33be686163311888a3c9
+    :git: https://github.com/tbaranes/SwiftyUtils.git
+
+CHECKOUT OPTIONS:
+  SCLAlertView:
+    :commit: d98c3e647ad77ed537d021e7d6ad07bb71f83186
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+  SwiftyUtils:
+    :commit: adf37824622a46190aef33be686163311888a3c9
+    :git: https://github.com/tbaranes/SwiftyUtils.git
+
+SPEC CHECKSUMS:
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
+  Firebase: 0490eca762a72e4f1582319539153897f1508dee
+  FirebaseAnalytics: 058d71e714a1a6804d9e0f25e3bb18e377a51579
+  FirebaseCore: 78276943ad85e616dfa54dafa6c89512987d9d60
+  FirebaseCoreDiagnostics: 2109d10c35e8289b1ee6cabf44d9ffb055620194
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseInstallations: 575cd32f2aec0feeb0e44f5d0110a09e5e60b47b
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  GoogleAppMeasurement: 39ecba10918b21c83877d392246157f65db351cf
+  GoogleDataTransport: 653963cf5be60fb59cf051e070f0836fdc305f81
+  GoogleDataTransportCCTSupport: 84e4d4bbab642f2e9d83ee65d78aca2b5527d314
+  GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
+  ImageRow: e65b2e1a33f89062bf2a553a2aad61d975eb7428
+  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
+  RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRealm: 900f5c7e6f0a2d6527b56eaf7283f3035ec1e8ba
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SCLAlertView: 776813fb1f62248965f37cb7edf4088ee6394460
+  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SwiftyUtils: e2c0b1fd674684e1083c894f6a71a64bb9617402
+
+PODFILE CHECKSUM: 706e49284a9f0a2c281d67e0bd273187e52d8aae
+
+COCOAPODS: 1.9.0

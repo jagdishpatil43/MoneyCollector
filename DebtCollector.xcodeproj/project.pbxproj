@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A019B3E23B97C4F002A804B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A019B3D23B97C4F002A804B /* SearchController.swift */; };
+		5A01C85123BACDD00044F608 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01C85023BACDD00044F608 /* SearchResultsController.swift */; };
+		5A041135239BD9B6004901BB /* GenerateReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A041134239BD9B6004901BB /* GenerateReportController.swift */; };
+		5A041137239C032E004901BB /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A041136239C032E004901BB /* Report.swift */; };
+		5A041139239C0E1D004901BB /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A041138239C0E1D004901BB /* ReportController.swift */; };
+		5A058A3E23C1D96C0074A48D /* SearchKeywordsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A058A3D23C1D96C0074A48D /* SearchKeywordsParser.swift */; };
+		5A3ED26620F4AA6700E79CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3ED26520F4AA6700E79CE6 /* AppDelegate.swift */; };
+		5A3ED26820F4AA6700E79CE6 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3ED26720F4AA6700E79CE6 /* OverviewViewController.swift */; };
+		5A3ED26B20F4AA6700E79CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3ED26920F4AA6700E79CE6 /* Main.storyboard */; };
+		5A3ED26D20F4AA6A00E79CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3ED26C20F4AA6A00E79CE6 /* Assets.xcassets */; };
+		5A3ED27020F4AA6A00E79CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3ED26E20F4AA6A00E79CE6 /* LaunchScreen.storyboard */; };
+		5A3EE36320FC93E100756EC8 /* BriefTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EE36220FC93E100756EC8 /* BriefTransactionTableViewCell.xib */; };
+		5A3EE36520FC950B00756EC8 /* BriefTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EE36420FC950B00756EC8 /* BriefTransactionTableViewCell.swift */; };
+		5A3F33F82101D5B300B28C14 /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F33F72101D5B200B28C14 /* TransactionListViewController.swift */; };
+		5A3F33FA2101D7A700B28C14 /* GroupedTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A3F33F92101D7A700B28C14 /* GroupedTransactionTableViewCell.xib */; };
+		5A3F33FC2101D7B800B28C14 /* GroupedTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F33FB2101D7B800B28C14 /* GroupedTransactionTableViewCell.swift */; };
+		5A3F33FE2101E36100B28C14 /* NewTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F33FD2101E36100B28C14 /* NewTransactionViewController.swift */; };
+		5A41FE6E214D165A0002AD83 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41FE6D214D165A0002AD83 /* CalendarController.swift */; };
+		5A433E812161078000F10F67 /* SearchTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A433E802161078000F10F67 /* SearchTextFieldCell.swift */; };
+		5A4580AF210A9B92002691FB /* DetailTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4580AE210A9B92002691FB /* DetailTransactionTableViewCell.xib */; };
+		5A4580B1210A9BE8002691FB /* DetailTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4580B0210A9BE8002691FB /* DetailTransactionTableViewCell.swift */; };
+		5A4580B3210A9CA3002691FB /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4580B2210A9CA3002691FB /* DetailTransactionViewController.swift */; };
+		5A4690BA20F5FE4400911E04 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4690B920F5FE4400911E04 /* Transaction.swift */; };
+		5A4690BC20F600DF00911E04 /* OverviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4690BB20F600DF00911E04 /* OverviewTableViewCell.xib */; };
+		5A4690BE20F6017200911E04 /* OverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4690BD20F6017200911E04 /* OverviewTableViewCell.swift */; };
+		5A4A0C5822B3E2D70040DF78 /* PeopleSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C5722B3E2D70040DF78 /* PeopleSelectorController.swift */; };
+		5A4DCD642368388B005B34AD /* TodayTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4DCD632368388B005B34AD /* TodayTableCell.xib */; };
+		5A4DCD66236838CC005B34AD /* TodayTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCD65236838CC005B34AD /* TodayTableCell.swift */; };
+		5A4E3E2D2285EB170016AF2A /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E3E2C2285EB170016AF2A /* DescriptionCell.xib */; };
+		5A4E3E2F2285EBA90016AF2A /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E3E2E2285EBA90016AF2A /* DescriptionCell.swift */; };
+		5A52DCE721128D2100B4F941 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A52DCE621128D2100B4F941 /* SettingsViewController.swift */; };
+		5A52DCE921128F7700B4F941 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A52DCE821128F7700B4F941 /* UserSettings.swift */; };
+		5A52FEAB23659ED300A388FA /* RealmWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6BF0E220F75D0A0035407A /* RealmWrapper.swift */; };
+		5A52FEAC23659ED700A388FA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4690B920F5FE4400911E04 /* Transaction.swift */; };
+		5A5BAA3723644DE6004A2755 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BAA3623644DE6004A2755 /* NotificationCenter.framework */; };
+		5A5BAA3A23644DE6004A2755 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BAA3923644DE6004A2755 /* TodayViewController.swift */; };
+		5A5BAA3D23644DE6004A2755 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5BAA3B23644DE6004A2755 /* MainInterface.storyboard */; };
+		5A5BAA4123644DE6004A2755 /* Debtors.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A5BAA3523644DE5004A2755 /* Debtors.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A6BF0E320F75D0A0035407A /* RealmWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6BF0E220F75D0A0035407A /* RealmWrapper.swift */; };
+		5A8A05EA20FDD65300D98280 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8A05E920FDD65300D98280 /* PersonViewController.swift */; };
+		5A9BC28820F8A12600DAFAC1 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BC28720F8A12600DAFAC1 /* PeopleViewController.swift */; };
+		84D2F1C8240D23800074E3D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D2F1C7240D23800074E3D0 /* GoogleService-Info.plist */; };
+		B3CF014CE2BB6490181E3866 /* Pods_Debtors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1251D4F1FEDDE152FF3D67C5 /* Pods_Debtors.framework */; };
+		C2ED3D93ECF20D208D037617 /* Pods_DebtCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E003D07B2AA4C3D8BEE2F21 /* Pods_DebtCollector.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A5BAA3F23644DE6004A2755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3ED25A20F4AA6700E79CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BAA3423644DE5004A2755;
+			remoteInfo = Debtors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A5BAA4523644DE6004A2755 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A5BAA4123644DE6004A2755 /* Debtors.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1251D4F1FEDDE152FF3D67C5 /* Pods_Debtors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Debtors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280BCFAF28ED4605356A222F /* Pods-DebtCollector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebtCollector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DebtCollector/Pods-DebtCollector.debug.xcconfig"; sourceTree = "<group>"; };
+		324A93EBEB4C3B4244C566CD /* Pods-Debtors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Debtors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Debtors/Pods-Debtors.release.xcconfig"; sourceTree = "<group>"; };
+		5A019B3D23B97C4F002A804B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		5A01C85023BACDD00044F608 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		5A041134239BD9B6004901BB /* GenerateReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateReportController.swift; sourceTree = "<group>"; };
+		5A041136239C032E004901BB /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		5A041138239C0E1D004901BB /* ReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
+		5A058A3D23C1D96C0074A48D /* SearchKeywordsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywordsParser.swift; sourceTree = "<group>"; };
+		5A3ED26220F4AA6700E79CE6 /* HDFC Money Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HDFC Money Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3ED26520F4AA6700E79CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A3ED26720F4AA6700E79CE6 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		5A3ED26A20F4AA6700E79CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A3ED26C20F4AA6A00E79CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A3ED26F20F4AA6A00E79CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A3ED27120F4AA6A00E79CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3EE36220FC93E100756EC8 /* BriefTransactionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BriefTransactionTableViewCell.xib; sourceTree = "<group>"; };
+		5A3EE36420FC950B00756EC8 /* BriefTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		5A3F33F72101D5B200B28C14 /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		5A3F33F92101D7A700B28C14 /* GroupedTransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupedTransactionTableViewCell.xib; sourceTree = "<group>"; };
+		5A3F33FB2101D7B800B28C14 /* GroupedTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		5A3F33FD2101E36100B28C14 /* NewTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionViewController.swift; sourceTree = "<group>"; };
+		5A41FE6D214D165A0002AD83 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		5A433E802161078000F10F67 /* SearchTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldCell.swift; sourceTree = "<group>"; };
+		5A4580AE210A9B92002691FB /* DetailTransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransactionTableViewCell.xib; sourceTree = "<group>"; };
+		5A4580B0210A9BE8002691FB /* DetailTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionTableViewCell.swift; sourceTree = "<group>"; };
+		5A4580B2210A9CA3002691FB /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
+		5A4690B920F5FE4400911E04 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		5A4690BB20F600DF00911E04 /* OverviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewTableViewCell.xib; sourceTree = "<group>"; };
+		5A4690BD20F6017200911E04 /* OverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTableViewCell.swift; sourceTree = "<group>"; };
+		5A4A0C5722B3E2D70040DF78 /* PeopleSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSelectorController.swift; sourceTree = "<group>"; };
+		5A4DCD632368388B005B34AD /* TodayTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayTableCell.xib; sourceTree = "<group>"; };
+		5A4DCD65236838CC005B34AD /* TodayTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableCell.swift; sourceTree = "<group>"; };
+		5A4E3E2C2285EB170016AF2A /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		5A4E3E2E2285EBA90016AF2A /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		5A52DCE621128D2100B4F941 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5A52DCE821128F7700B4F941 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		5A52FEAD2365A2CB00A388FA /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A52FEAF2365A2CB00A388FA /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BAA3023644CCA004A2755 /* DebtCollector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DebtCollector.entitlements; sourceTree = "<group>"; };
+		5A5BAA3523644DE5004A2755 /* Debtors.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Debtors.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BAA3623644DE6004A2755 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5A5BAA3923644DE6004A2755 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		5A5BAA3C23644DE6004A2755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5A5BAA3E23644DE6004A2755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BAA4623644DF1004A2755 /* Debtors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Debtors.entitlements; sourceTree = "<group>"; };
+		5A6BF0E220F75D0A0035407A /* RealmWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWrapper.swift; sourceTree = "<group>"; };
+		5A8A05E920FDD65300D98280 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		5A9BC28720F8A12600DAFAC1 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		84D2F1C7240D23800074E3D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		976FEA4EE3B23BDF47360425 /* Pods-DebtCollector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebtCollector.release.xcconfig"; path = "Pods/Target Support Files/Pods-DebtCollector/Pods-DebtCollector.release.xcconfig"; sourceTree = "<group>"; };
+		9E003D07B2AA4C3D8BEE2F21 /* Pods_DebtCollector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DebtCollector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0658C1B739D9E131225DF1E /* Pods-Debtors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Debtors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Debtors/Pods-Debtors.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A3ED25F20F4AA6700E79CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ED3D93ECF20D208D037617 /* Pods_DebtCollector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BAA3223644DE5004A2755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BAA3723644DE6004A2755 /* NotificationCenter.framework in Frameworks */,
+				B3CF014CE2BB6490181E3866 /* Pods_Debtors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D55AA88D850CB7152394DAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A52FEAD2365A2CB00A388FA /* Realm.framework */,
+				5A52FEAF2365A2CB00A388FA /* RealmSwift.framework */,
+				9E003D07B2AA4C3D8BEE2F21 /* Pods_DebtCollector.framework */,
+				5A5BAA3623644DE6004A2755 /* NotificationCenter.framework */,
+				1251D4F1FEDDE152FF3D67C5 /* Pods_Debtors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A3ED25920F4AA6700E79CE6 = {
+			isa = PBXGroup;
+			children = (
+				5A3ED26420F4AA6700E79CE6 /* DebtCollector */,
+				5A5BAA3823644DE6004A2755 /* Debtors */,
+				5A3ED26320F4AA6700E79CE6 /* Products */,
+				EE7C594B368C39A6B777292C /* Pods */,
+				4D55AA88D850CB7152394DAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A3ED26320F4AA6700E79CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A3ED26220F4AA6700E79CE6 /* HDFC Money Collector.app */,
+				5A5BAA3523644DE5004A2755 /* Debtors.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A3ED26420F4AA6700E79CE6 /* DebtCollector */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BAA3023644CCA004A2755 /* DebtCollector.entitlements */,
+				5A3ED26520F4AA6700E79CE6 /* AppDelegate.swift */,
+				84D2F1C7240D23800074E3D0 /* GoogleService-Info.plist */,
+				5A3ED26720F4AA6700E79CE6 /* OverviewViewController.swift */,
+				5A9BC28720F8A12600DAFAC1 /* PeopleViewController.swift */,
+				5A8A05E920FDD65300D98280 /* PersonViewController.swift */,
+				5A3F33F72101D5B200B28C14 /* TransactionListViewController.swift */,
+				5A3F33FD2101E36100B28C14 /* NewTransactionViewController.swift */,
+				5A4580B2210A9CA3002691FB /* DetailTransactionViewController.swift */,
+				5A52DCE621128D2100B4F941 /* SettingsViewController.swift */,
+				5A41FE6D214D165A0002AD83 /* CalendarController.swift */,
+				5A4A0C5722B3E2D70040DF78 /* PeopleSelectorController.swift */,
+				5A041134239BD9B6004901BB /* GenerateReportController.swift */,
+				5A041138239C0E1D004901BB /* ReportController.swift */,
+				5A019B3D23B97C4F002A804B /* SearchController.swift */,
+				5A01C85023BACDD00044F608 /* SearchResultsController.swift */,
+				5A3ED26920F4AA6700E79CE6 /* Main.storyboard */,
+				5A4690B920F5FE4400911E04 /* Transaction.swift */,
+				5A041136239C032E004901BB /* Report.swift */,
+				5A058A3D23C1D96C0074A48D /* SearchKeywordsParser.swift */,
+				5A6BF0E220F75D0A0035407A /* RealmWrapper.swift */,
+				5A52DCE821128F7700B4F941 /* UserSettings.swift */,
+				5A3ED26C20F4AA6A00E79CE6 /* Assets.xcassets */,
+				5A3ED26E20F4AA6A00E79CE6 /* LaunchScreen.storyboard */,
+				5A4690BB20F600DF00911E04 /* OverviewTableViewCell.xib */,
+				5A4690BD20F6017200911E04 /* OverviewTableViewCell.swift */,
+				5A3EE36220FC93E100756EC8 /* BriefTransactionTableViewCell.xib */,
+				5A3EE36420FC950B00756EC8 /* BriefTransactionTableViewCell.swift */,
+				5A3F33F92101D7A700B28C14 /* GroupedTransactionTableViewCell.xib */,
+				5A3F33FB2101D7B800B28C14 /* GroupedTransactionTableViewCell.swift */,
+				5A4580AE210A9B92002691FB /* DetailTransactionTableViewCell.xib */,
+				5A4580B0210A9BE8002691FB /* DetailTransactionTableViewCell.swift */,
+				5A4E3E2C2285EB170016AF2A /* DescriptionCell.xib */,
+				5A4E3E2E2285EBA90016AF2A /* DescriptionCell.swift */,
+				5A433E802161078000F10F67 /* SearchTextFieldCell.swift */,
+				5A3ED27120F4AA6A00E79CE6 /* Info.plist */,
+			);
+			path = DebtCollector;
+			sourceTree = "<group>";
+		};
+		5A5BAA3823644DE6004A2755 /* Debtors */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BAA4623644DF1004A2755 /* Debtors.entitlements */,
+				5A5BAA3923644DE6004A2755 /* TodayViewController.swift */,
+				5A5BAA3B23644DE6004A2755 /* MainInterface.storyboard */,
+				5A4DCD632368388B005B34AD /* TodayTableCell.xib */,
+				5A4DCD65236838CC005B34AD /* TodayTableCell.swift */,
+				5A5BAA3E23644DE6004A2755 /* Info.plist */,
+			);
+			path = Debtors;
+			sourceTree = "<group>";
+		};
+		EE7C594B368C39A6B777292C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				280BCFAF28ED4605356A222F /* Pods-DebtCollector.debug.xcconfig */,
+				976FEA4EE3B23BDF47360425 /* Pods-DebtCollector.release.xcconfig */,
+				D0658C1B739D9E131225DF1E /* Pods-Debtors.debug.xcconfig */,
+				324A93EBEB4C3B4244C566CD /* Pods-Debtors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A3ED26120F4AA6700E79CE6 /* DebtCollector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3ED27420F4AA6A00E79CE6 /* Build configuration list for PBXNativeTarget "DebtCollector" */;
+			buildPhases = (
+				F0EC886737A8248A71806CAD /* [CP] Check Pods Manifest.lock */,
+				5A3ED25E20F4AA6700E79CE6 /* Sources */,
+				5A3ED25F20F4AA6700E79CE6 /* Frameworks */,
+				5A3ED26020F4AA6700E79CE6 /* Resources */,
+				2CA8962F86CB29853F63FAB0 /* [CP] Embed Pods Frameworks */,
+				5A5BAA4523644DE6004A2755 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BAA4023644DE6004A2755 /* PBXTargetDependency */,
+			);
+			name = DebtCollector;
+			productName = DebtCollector;
+			productReference = 5A3ED26220F4AA6700E79CE6 /* HDFC Money Collector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A5BAA3423644DE5004A2755 /* Debtors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BAA4223644DE6004A2755 /* Build configuration list for PBXNativeTarget "Debtors" */;
+			buildPhases = (
+				6EC27E7F3CFD188E654BD15E /* [CP] Check Pods Manifest.lock */,
+				5A5BAA3123644DE5004A2755 /* Sources */,
+				5A5BAA3223644DE5004A2755 /* Frameworks */,
+				5A5BAA3323644DE5004A2755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Debtors;
+			productName = Debtors;
+			productReference = 5A5BAA3523644DE5004A2755 /* Debtors.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A3ED25A20F4AA6700E79CE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mulang Su";
+				TargetAttributes = {
+					5A3ED26120F4AA6700E79CE6 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5A5BAA3423644DE5004A2755 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5A3ED25D20F4AA6700E79CE6 /* Build configuration list for PBXProject "DebtCollector" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A3ED25920F4AA6700E79CE6;
+			productRefGroup = 5A3ED26320F4AA6700E79CE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A3ED26120F4AA6700E79CE6 /* DebtCollector */,
+				5A5BAA3423644DE5004A2755 /* Debtors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A3ED26020F4AA6700E79CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4580AF210A9B92002691FB /* DetailTransactionTableViewCell.xib in Resources */,
+				5A4690BC20F600DF00911E04 /* OverviewTableViewCell.xib in Resources */,
+				84D2F1C8240D23800074E3D0 /* GoogleService-Info.plist in Resources */,
+				5A3F33FA2101D7A700B28C14 /* GroupedTransactionTableViewCell.xib in Resources */,
+				5A3ED27020F4AA6A00E79CE6 /* LaunchScreen.storyboard in Resources */,
+				5A4E3E2D2285EB170016AF2A /* DescriptionCell.xib in Resources */,
+				5A3ED26D20F4AA6A00E79CE6 /* Assets.xcassets in Resources */,
+				5A3EE36320FC93E100756EC8 /* BriefTransactionTableViewCell.xib in Resources */,
+				5A3ED26B20F4AA6700E79CE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BAA3323644DE5004A2755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BAA3D23644DE6004A2755 /* MainInterface.storyboard in Resources */,
+				5A4DCD642368388B005B34AD /* TodayTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CA8962F86CB29853F63FAB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DebtCollector/Pods-DebtCollector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DebtCollector/Pods-DebtCollector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC27E7F3CFD188E654BD15E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Debtors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0EC886737A8248A71806CAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DebtCollector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A3ED25E20F4AA6700E79CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4690BE20F6017200911E04 /* OverviewTableViewCell.swift in Sources */,
+				5A3ED26820F4AA6700E79CE6 /* OverviewViewController.swift in Sources */,
+				5A041137239C032E004901BB /* Report.swift in Sources */,
+				5A041139239C0E1D004901BB /* ReportController.swift in Sources */,
+				5A01C85123BACDD00044F608 /* SearchResultsController.swift in Sources */,
+				5A3F33FE2101E36100B28C14 /* NewTransactionViewController.swift in Sources */,
+				5A4580B1210A9BE8002691FB /* DetailTransactionTableViewCell.swift in Sources */,
+				5A6BF0E320F75D0A0035407A /* RealmWrapper.swift in Sources */,
+				5A8A05EA20FDD65300D98280 /* PersonViewController.swift in Sources */,
+				5A3ED26620F4AA6700E79CE6 /* AppDelegate.swift in Sources */,
+				5A4E3E2F2285EBA90016AF2A /* DescriptionCell.swift in Sources */,
+				5A058A3E23C1D96C0074A48D /* SearchKeywordsParser.swift in Sources */,
+				5A4580B3210A9CA3002691FB /* DetailTransactionViewController.swift in Sources */,
+				5A52DCE721128D2100B4F941 /* SettingsViewController.swift in Sources */,
+				5A3F33FC2101D7B800B28C14 /* GroupedTransactionTableViewCell.swift in Sources */,
+				5A4A0C5822B3E2D70040DF78 /* PeopleSelectorController.swift in Sources */,
+				5A041135239BD9B6004901BB /* GenerateReportController.swift in Sources */,
+				5A4690BA20F5FE4400911E04 /* Transaction.swift in Sources */,
+				5A019B3E23B97C4F002A804B /* SearchController.swift in Sources */,
+				5A3EE36520FC950B00756EC8 /* BriefTransactionTableViewCell.swift in Sources */,
+				5A52DCE921128F7700B4F941 /* UserSettings.swift in Sources */,
+				5A3F33F82101D5B300B28C14 /* TransactionListViewController.swift in Sources */,
+				5A433E812161078000F10F67 /* SearchTextFieldCell.swift in Sources */,
+				5A9BC28820F8A12600DAFAC1 /* PeopleViewController.swift in Sources */,
+				5A41FE6E214D165A0002AD83 /* CalendarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BAA3123644DE5004A2755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4DCD66236838CC005B34AD /* TodayTableCell.swift in Sources */,
+				5A5BAA3A23644DE6004A2755 /* TodayViewController.swift in Sources */,
+				5A52FEAB23659ED300A388FA /* RealmWrapper.swift in Sources */,
+				5A52FEAC23659ED700A388FA /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A5BAA4023644DE6004A2755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BAA3423644DE5004A2755 /* Debtors */;
+			targetProxy = 5A5BAA3F23644DE6004A2755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A3ED26920F4AA6700E79CE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3ED26A20F4AA6700E79CE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A3ED26E20F4AA6A00E79CE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3ED26F20F4AA6A00E79CE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5A5BAA3B23644DE6004A2755 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5BAA3C23644DE6004A2755 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A3ED27220F4AA6A00E79CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A3ED27320F4AA6A00E79CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A3ED27520F4AA6A00E79CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280BCFAF28ED4605356A222F /* Pods-DebtCollector.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DebtCollector/DebtCollector.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = G82ATQUARY;
+				INFOPLIST_FILE = DebtCollector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdfcbank.moneycollect;
+				PRODUCT_NAME = "HDFC Money Collector";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5A3ED27620F4AA6A00E79CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976FEA4EE3B23BDF47360425 /* Pods-DebtCollector.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DebtCollector/DebtCollector.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = G82ATQUARY;
+				INFOPLIST_FILE = DebtCollector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdfcbank.moneycollect;
+				PRODUCT_NAME = "HDFC Money Collector";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5A5BAA4323644DE6004A2755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0658C1B739D9E131225DF1E /* Pods-Debtors.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Debtors/Debtors.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G82ATQUARY;
+				INFOPLIST_FILE = Debtors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdfcbank.moneycollect.Debtors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A5BAA4423644DE6004A2755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324A93EBEB4C3B4244C566CD /* Pods-Debtors.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Debtors/Debtors.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G82ATQUARY;
+				INFOPLIST_FILE = Debtors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdfcbank.moneycollect.Debtors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A3ED25D20F4AA6700E79CE6 /* Build configuration list for PBXProject "DebtCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3ED27220F4AA6A00E79CE6 /* Debug */,
+				5A3ED27320F4AA6A00E79CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3ED27420F4AA6A00E79CE6 /* Build configuration list for PBXNativeTarget "DebtCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3ED27520F4AA6A00E79CE6 /* Debug */,
+				5A3ED27620F4AA6A00E79CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BAA4223644DE6004A2755 /* Build configuration list for PBXNativeTarget "Debtors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BAA4323644DE6004A2755 /* Debug */,
+				5A5BAA4423644DE6004A2755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A3ED25A20F4AA6700E79CE6 /* Project object */;
+}
