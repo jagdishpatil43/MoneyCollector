@@ -37,16 +37,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="2OI-pc-F2h" style="IBUITableViewCellStyleDefault" id="iKT-v2-Pxf">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="49.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iKT-v2-Pxf" id="Osk-gb-hdE">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="49.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2OI-pc-F2h">
-                                            <rect key="frame" x="20" y="0.0" width="355" height="43.666667938232422"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="2OI-pc-F2h">
+                                            <rect key="frame" x="20" y="0.0" width="355" height="49.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -60,7 +60,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="People" id="jvE-eQ-zGY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GDl-Mf-2Wl">
+                        <barButtonItem key="rightBarButtonItem" largeContentSizeImage="plus" catalog="system" systemItem="add" id="GDl-Mf-2Wl">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addPerson" destination="N1f-kV-Bbh" id="Aul-kB-uE3"/>
@@ -79,7 +79,7 @@
         <scene sceneID="HEO-lM-ZgL">
             <objects>
                 <navigationController id="ToA-du-nQC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" selectedImage="calendar" id="zyE-VX-qgX"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" largeContentSizeImage="calendar" selectedImage="calendar" id="zyE-VX-qgX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CN9-so-cZl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -100,13 +100,17 @@
         <scene sceneID="Cgx-7h-d1d">
             <objects>
                 <navigationController id="IID-Fz-z35" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Reports" image="doc.text" catalog="system" selectedImage="doc.text.fill" id="Qge-R6-z75"/>
+                    <tabBarItem key="tabBarItem" title="Reports" image="doc.text" catalog="system" largeContentSizeImage="doc.text.magnifyingglass" selectedImage="doc.text.fill" id="Qge-R6-z75"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pie-tA-mqX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392159999998" green="0.25882352939999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <color key="textColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -147,7 +151,7 @@
                             <tableViewSection headerTitle="general" id="qhz-dr-hX5">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="kqj-5N-B2W" detailTextLabel="72x-0C-Il9" style="IBUITableViewCellStyleValue1" id="tzc-nt-6FO">
-                                        <rect key="frame" x="0.0" y="55.333332061767578" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="55.333332061767578" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tzc-nt-6FO" id="Yxr-Nt-vHd">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -171,7 +175,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="0pS-4S-Lhj" detailTextLabel="gsd-sm-NB1" style="IBUITableViewCellStyleValue1" id="l7F-IS-asL">
-                                        <rect key="frame" x="0.0" y="98.833332061767578" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="98.833332061767578" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l7F-IS-asL" id="Rfl-YZ-bhs">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -401,6 +405,10 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
                                         <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -449,14 +457,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="All Transactions" id="utv-0m-0Tc">
                         <barButtonItem key="backBarButtonItem" title=" " id="iUY-ei-7YM"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="Osg-Lt-Ufn">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="magnifyingglass" catalog="system" largeContentSizeImage="magnifyingglass" id="Osg-Lt-Ufn">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="dT9-jf-5tC" kind="presentation" modalPresentationStyle="formSheet" id="EVG-nP-Wbz"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="Ln1-4E-ODY">
+                            <barButtonItem largeContentSizeImage="plus" catalog="system" systemItem="add" id="Ln1-4E-ODY">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="addTransaction" destination="lFV-F3-8Ju" id="2aY-dl-hi2"/>
@@ -484,8 +492,8 @@
         <scene sceneID="qUd-h6-M27">
             <objects>
                 <navigationController id="amC-mm-smG" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W9Q-6M-Ypi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="W9Q-6M-Ypi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392159999998" green="0.25882352939999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -546,7 +554,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rlH-Vt-9hV">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="rlH-Vt-9hV">
                                             <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -747,7 +755,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="C6D-G9-wdn">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="0rM-lQ-fDc">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" largeContentSizeImage="gear" id="0rM-lQ-fDc">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="amC-mm-smG" kind="presentation" modalPresentationStyle="formSheet" id="RCe-y7-Y5l"/>
@@ -767,9 +775,9 @@
         <scene sceneID="esB-44-vai">
             <objects>
                 <navigationController id="qE7-ul-luR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="1ho-jg-teq"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="acz-1b-RbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" largeContentSizeImage="house" selectedImage="house.fill" id="1ho-jg-teq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="acz-1b-RbC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392159999998" green="0.25882352939999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -873,7 +881,7 @@
                         <viewLayoutGuide key="safeArea" id="PYY-DZ-7fT"/>
                     </view>
                     <navigationItem key="navigationItem" id="IYo-x3-Ieq">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pvN-85-Aum">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="pvN-85-Aum">
                             <color key="tintColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="cancel" destination="iAB-8f-U1h" id="k1u-e1-dfU"/>
@@ -933,16 +941,19 @@
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="doc.text" catalog="system" width="56" height="64"/>
         <image name="doc.text.fill" catalog="system" width="56" height="64"/>
+        <image name="doc.text.magnifyingglass" catalog="system" width="58" height="64"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OCJ-6o-3q3"/>
         <segue reference="5fu-jd-rV7"/>
         <segue reference="IuL-He-dYR"/>
-        <segue reference="GWA-4P-n2v"/>
-        <segue reference="Vm3-V9-pGH"/>
+        <segue reference="KYb-g9-9vi"/>
+        <segue reference="ehc-bi-kWY"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
