@@ -25,16 +25,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kbe-Ko-1yZ">
-                                <rect key="frame" x="265" y="4" width="78" height="41"/>
+                                <rect key="frame" x="225" y="4" width="118" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owes you" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgg-Mo-aov">
-                                        <rect key="frame" x="0.0" y="0.0" width="78" height="20.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="78" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹0" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMA-UH-bh4">
-                                        <rect key="frame" x="28.5" y="20.5" width="21" height="20.5"/>
+                                        <rect key="frame" x="48.5" y="20.5" width="21" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -49,15 +49,24 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mgg-Mo-aov" secondAttribute="trailing" constant="20" symbolic="YES" id="MHO-DQ-Q5A"/>
+                                    <constraint firstItem="tMA-UH-bh4" firstAttribute="firstBaseline" secondItem="Mgg-Mo-aov" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="cLY-qT-E9N"/>
+                                </constraints>
                             </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="M8i-hU-fxf" firstAttribute="centerY" secondItem="zrW-c7-6kM" secondAttribute="centerY" id="3Bm-yp-5eQ"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="zrW-c7-6kM" firstAttribute="leading" secondItem="MDH-fP-iB9" secondAttribute="leading" constant="16" id="RV5-ED-MDG"/>
                     <constraint firstAttribute="bottom" secondItem="zrW-c7-6kM" secondAttribute="bottom" constant="16" id="Z6L-9I-ThB"/>
+                    <constraint firstItem="M8i-hU-fxf" firstAttribute="leading" secondItem="MDH-fP-iB9" secondAttribute="leading" constant="16" id="ZdF-tQ-zTZ"/>
                     <constraint firstAttribute="trailing" secondItem="zrW-c7-6kM" secondAttribute="trailing" constant="16" id="fvr-Z3-EhQ"/>
                     <constraint firstItem="zrW-c7-6kM" firstAttribute="top" secondItem="MDH-fP-iB9" secondAttribute="top" constant="16" id="scV-3C-bmq"/>
+                    <constraint firstAttribute="bottom" secondItem="tMA-UH-bh4" secondAttribute="bottom" constant="20" id="uDh-1R-OmX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

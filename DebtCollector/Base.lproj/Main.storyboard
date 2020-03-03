@@ -457,7 +457,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="All Transactions" id="utv-0m-0Tc">
                         <barButtonItem key="backBarButtonItem" title=" " id="iUY-ei-7YM"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="magnifyingglass" catalog="system" largeContentSizeImage="magnifyingglass" id="Osg-Lt-Ufn">
+                        <barButtonItem key="leftBarButtonItem" largeContentSizeImage="magnifyingglass" catalog="system" systemItem="search" id="Osg-Lt-Ufn">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="dT9-jf-5tC" kind="presentation" modalPresentationStyle="formSheet" id="EVG-nP-Wbz"/>
@@ -667,7 +667,7 @@
                 <navigationController id="ZjY-9p-tnD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Transactions" image="arrow.right.arrow.left.square" catalog="system" selectedImage="arrow.right.arrow.left.square.fill" id="BTB-Xa-vHG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EhH-1e-6ub">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392159999998" green="0.25882352939999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -755,6 +755,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="C6D-G9-wdn">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="line.horizontal.3" catalog="system" style="plain" id="HaB-XF-cC7">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" image="gear" catalog="system" largeContentSizeImage="gear" id="0rM-lQ-fDc">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -820,7 +823,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Delete This Transaction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mw7-P9-A4f">
                                             <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -945,15 +948,16 @@
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e6S-6M-9dK"/>
+        <segue reference="LYA-iW-NO5"/>
         <segue reference="5fu-jd-rV7"/>
-        <segue reference="IuL-He-dYR"/>
+        <segue reference="sdR-Cu-sjk"/>
         <segue reference="KYb-g9-9vi"/>
-        <segue reference="Vm3-V9-pGH"/>
+        <segue reference="ehc-bi-kWY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
