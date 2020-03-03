@@ -755,7 +755,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="C6D-G9-wdn">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" largeContentSizeImage="gear" id="0rM-lQ-fDc">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" image="gear" catalog="system" largeContentSizeImage="gear" id="0rM-lQ-fDc">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="amC-mm-smG" kind="presentation" modalPresentationStyle="formSheet" id="RCe-y7-Y5l"/>
@@ -776,8 +776,8 @@
             <objects>
                 <navigationController id="qE7-ul-luR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" largeContentSizeImage="house" selectedImage="house.fill" id="1ho-jg-teq"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="acz-1b-RbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="acz-1b-RbC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392159999998" green="0.25882352939999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -798,7 +798,7 @@
             <objects>
                 <tableViewController id="RLI-JK-oi8" customClass="DetailTransactionViewController" customModule="HDFC_Money_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Out-1n-JBc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -949,11 +949,11 @@
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OCJ-6o-3q3"/>
+        <segue reference="e6S-6M-9dK"/>
         <segue reference="5fu-jd-rV7"/>
         <segue reference="IuL-He-dYR"/>
         <segue reference="KYb-g9-9vi"/>
-        <segue reference="ehc-bi-kWY"/>
+        <segue reference="Vm3-V9-pGH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

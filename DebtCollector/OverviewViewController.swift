@@ -4,6 +4,7 @@ import RxCocoa
 import RxRealm
 
 extension UINavigationController {
+    // Add a read only mode prompt at the top of the screen in Read only mode
     func updateReadOnlyModePrompt() {
         if UserSettings.readOnlyMode {
             topViewController?.navigationItem.prompt = "Read Only Mode"
@@ -96,6 +97,7 @@ class OverviewViewController: UITableViewController {
         tableView.tableFooterView = UIView(frame: .zero)
     }
     
+    //When users is coming from settings
     @IBAction func unwindFromSettings(segue: UIStoryboardSegue) {
         navigationController?.updateReadOnlyModePrompt()
         if let image = UserSettings.bgImage {
