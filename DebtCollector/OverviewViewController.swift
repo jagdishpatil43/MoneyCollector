@@ -44,11 +44,26 @@ class OverviewViewController: UITableViewController {
                 let formatter = NumberFormatter()
                 formatter.numberStyle = .currency
                 formatter.currencySymbol = UserSettings.currencySymbol
-                if #available(iOS 13, *) {
-                    cell.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.5)
-                } else {
-                    cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+                
+                
+                //if #available(iOS 13, *) {
+                //    cell.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.5)
+                //} else {
+                //    cell.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+                //}
+                
+                var fAlpha = 0.5
+    
+                if UIAccessibility.isReduceTransparencyEnabled {
+                    fAlpha = 0.9
                 }
+                
+                if #available(iOS 13, *) {
+                    cell.backgroundColor = UIColor.systemBackground.withAlphaComponent(CGFloat(fAlpha))
+                } else {
+                    cell.backgroundColor = UIColor.white.withAlphaComponent(CGFloat(fAlpha))
+                }
+                
                 cell.amountLabel.text = formatter.string(from: personAndAmount.value as NSNumber)
             }.disposed(by: disposeBag)
         
